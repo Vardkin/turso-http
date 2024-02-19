@@ -1,6 +1,6 @@
 <?php
 
-namespace Darkterminal;
+namespace Darkterminal\TursoHttp;
 
 enum DataType
 {

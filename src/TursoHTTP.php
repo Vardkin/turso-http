@@ -1,6 +1,6 @@
 <?php
 
-namespace Darkterminal;
+namespace Darkterminal\TursoHttp;
 
 use Darkterminal\TursoHttp\core\Response;
 use Darkterminal\TursoHttp\core\Utils;
