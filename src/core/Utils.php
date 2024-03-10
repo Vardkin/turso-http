@@ -14,20 +14,13 @@ final class Utils
      *
      * @param string $type The type of the API.
      * @param string $action The action to perform on the API.
-     * @param string $dev The development URL.
      *
      * @return array The endpoint configuration for the specified type and action.
      *
      * @throws \Exception Throws an exception with a 403 HTTP response code if the endpoint configuration is not found.
      */
-    public static function useAPI($type, $action, $dev = null): array
+    public static function useAPI($type, $action): array
     {
-        if ($dev) {
-          $baseURL = $dev;
-        } else {
-          $baseURL = 'https://api.turso.tech/v1';
-        }
-
         $endpoints = require 'Repositories'. \DIRECTORY_SEPARATOR .'endpoints.php';
 
         if (isset($endpoints[$type][$action])) {

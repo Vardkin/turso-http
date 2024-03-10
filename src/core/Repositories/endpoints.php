@@ -1,6 +1,6 @@
 <?php
 
-// $baseURL = 'https://api.turso.tech/v1';
+$baseURL = 'https://api.turso.tech/v1';
 
 return [
     'tokens'        => require_once 'tokens.php',
